@@ -416,7 +416,6 @@ h1 {
 .popular-books {
   flex-grow: 1;
   padding: 0 30px 50px;
-  overflow-y: auto;
 }
 
 .genre {
@@ -428,7 +427,6 @@ h1 {
   white-space: nowrap;
   padding-bottom: 15px;
   border-bottom: 1px solid #dcddde;
-  position: sticky;
   top: 1px;
   right: 0;
   background-color: var(--page-bg-color);
@@ -696,6 +694,19 @@ h1 {
   .main-wrapper {
     margin-top: 50px;
   }
+  .book-card {
+    padding: 0;
+    height: 100%;
+    margin: 0;
+  }
+  .content-wrapper {
+    flex-direction: column;
+  }
+  .content-wrapper .book-card-img {
+    width: 100%;
+    box-shadow: none;
+    margin: 0;
+  }
 }
 @media (max-width: 360px) {
   .rating > label:before {
@@ -751,13 +762,13 @@ button {
   padding: 10px 15px;
   font-weight: bold;
   display: inline-block;
-  font-size: 12px;
   margin-top: 10px;
 }
 
 a {
   text-transform: uppercase;
   text-decoration: none;
+  font-size: 10px;
 }
 
 .price {
